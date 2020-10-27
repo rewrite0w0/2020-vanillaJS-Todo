@@ -8,7 +8,7 @@ function now() {
     const date = new Date();
     //날짜
     const year = date.getFullYear();
-    const month = date.getMonth();
+    const month = date.getMonth()+1;
     const day = date.getDate();
     const dayNumber = date.getDay();
     //시간
@@ -57,7 +57,6 @@ function now() {
 function init() {
     now();
     setInterval(now, 1000);
-    return;
 }
 
 init();
