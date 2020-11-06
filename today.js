@@ -54,9 +54,12 @@ function now() {
 }
 
 
+
+
 function init() {
     now();
     setInterval(now, 1000);
+    clearInterval(now);
 }
 
 init();
